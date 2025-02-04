@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/tricity</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <mapping class="com.aci.energy.login.tricity.model.AlertEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.AlertConfigurationEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.AlertConfigurationOperatorEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.AlertConfigurationParameterEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.AxeEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.CategoryEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.CircuitorGroupEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.CircuitorInstallationEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.ConfigEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.ConfigurationEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.DashboardEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.DeviceEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.EnergyDivisorEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.GroupsEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.GroupsPhaseEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.InformationEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.InstallationEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.InstallationGroupEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.InstallationIpEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.InstallationgroupInstallationEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.InstantCommandEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.ListLastEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.MesureEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.OutputEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.PhaseEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.ProgramEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.ProgramOutputEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.ReportEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.SondeEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.StreetLightEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.TemplateEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.VoltageEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.WidgetEntity"/>
+    <mapping class="com.aci.energy.login.tricity.model.ZonesEntity"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
